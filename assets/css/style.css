@@ -1,0 +1,208 @@
+:root {
+    --nord0: #2E3440;
+    --nord1: #3B4252;
+    --transparent-nord1: rgba(59, 66, 82, 0.47);
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+    --nord7: #8FBCBB;
+    --nord8: #88C0d0;
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+    --nord11: #bF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--nord0);
+}
+
+section {
+    min-height: 100vh;
+    padding: 7.5rem 9% 2rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--nord1);
+    padding: 15px 20px;
+    color: var(--nord4);
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-size: 2rem;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: var(--nord2);
+}
+
+/*===========================================
+                    HEADER
+ ===========================================*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--nord0);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+header #logo {
+    font-size: 3rem;
+    color: var(--nord4);
+    font-family: 'Sora', sans-serif;
+    font-weight: lighter;
+}
+header #logo:hover {
+    color: var(--nord5);
+}
+header #logo span {
+    font-family: 'Sora', sans-serif;
+    font-weight: normal;
+}
+
+header #navbar a {
+    font-size: 2.7rem;
+    margin-left: 2rem;
+    color: var(--nord4);
+}
+header #navbar a:hover {
+    color: var(--nord5);
+}
+
+/*===========================================
+                      HOME
+ ===========================================*/
+#home {
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background: url(../img/home_bg.svg) center;
+    background-repeat: no-repeat;
+}
+#home .content h1 {
+    margin-top: 10rem;
+    font-size: 5rem;
+    color: var(--nord4);
+    text-transform: capitalize;
+}
+#home .content p {
+    font-size: 2rem;
+    color: var(--nord4);
+    margin-top: 7rem;
+    padding: 2rem;
+    border-radius: 7rem;
+    width: 40%;
+    background: var(--transparent-nord1);
+}
+
+.section-title {
+    text-align: center;
+    color: var(--nord4);
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+p {
+    color: var(--nord5);
+    font-size: 2rem;
+}
+
+.image {
+    background-image: url(../img/img_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+}
+.image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 100%;
+}
+
+#about {
+    padding-bottom: 3rem;
+}
+#about .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#about .column .content h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+#about .column .content {
+    flex: 1 1 40rem;
+}
+#about .column .content div a:last-child {
+    margin-left: 1rem;
+}
+
+#skills {
+    background: url(../img/skills_bg.svg) no-repeat top;
+    background-size: cover;
+    padding: 35rem 0;
+}
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box-container .box {
+    position: relative;
+    flex: 1 1 30rem;
+    margin: 15px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: 0.2s linear;
+}
+#skills .box-container .box .image {
+    background: url(../img/img_bg_darker.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+}
+.box-container p {
+    margin-top: 3rem;
+}
